@@ -67,7 +67,6 @@ public class BankAccount {
         }
 
         private void validateUserObject() {
-            // Do some basic validations to check
             if (this.newsletter && email == null) {
                 throw new IllegalArgumentException("Email can't be null when client want to receive the new letter");
             }
